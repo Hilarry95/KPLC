@@ -1,6 +1,5 @@
 import streamlit as st
 from setuptools import setup
-from tensorflow.keras.models import load_model
 import numpy as np
 import pickle
 from tensorflow.keras.preprocessing.text import Tokenizer
@@ -11,7 +10,8 @@ from tensorflow.keras.preprocessing.sequence import pad_sequences
 st.set_page_config(page_title="KPLC Chatbot", page_icon="⚡", layout="centered")
 
 # Load the model
-model = load_model('model.h5')
+with open('model.pkl', 'rb') as file:
+    model = pickle.load(file)
 
 # Custom CSS for black background and blue accents
 st.markdown(

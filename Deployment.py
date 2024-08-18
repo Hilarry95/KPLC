@@ -1,4 +1,5 @@
 import streamlit as st
+from setuptools import setup
 from keras.models import load_model
 import numpy as np
 import pickle

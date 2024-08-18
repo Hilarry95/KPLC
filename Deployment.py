@@ -3,8 +3,9 @@ from setuptools import setup
 from keras.models import load_model
 import numpy as np
 import pickle
-from keras.preprocessing.text import Tokenizer
-from keras.preprocessing.sequence import pad_sequences
+from tensorflow.keras.preprocessing.text import Tokenizer
+from tensorflow.keras.preprocessing.sequence import pad_sequences
+
 
 # Set page config for the app
 st.set_page_config(page_title="KPLC Chatbot", page_icon="⚡", layout="centered")

@@ -10,7 +10,7 @@ from tensorflow.keras.preprocessing.sequence import pad_sequences
 # Set page config for the app
 st.set_page_config(page_title="KPLC Chatbot", page_icon="⚡", layout="centered")
 
-# Load the saved model
+# Load the model
 model = load_model('categorization_model.h5')
 
 # Custom CSS for black background and blue accents
